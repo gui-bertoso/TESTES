@@ -1,0 +1,106 @@
+p{
+    line-height: 1.6px;
+    font-size: 22px;
+    color: white;
+    font-family: "Poppins"
+}
+.container{
+    background: black;
+}
+body{
+    background: rgb(38, 80, 134);
+    overflow: visible;
+}
+h1{
+    color: white;
+}
+.rect{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
+
+    border-radius: 20px;
+    padding: 3px;
+    background-color: rgb(84, 86, 148);
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+
+    overflow: hidden;
+}
+.text1{
+    color: white;
+    font-size: 26px;
+    font-style: bold;
+    font-family: "Poppins";
+    padding-left: 15px;
+
+    text-align: center;
+}
+.text2{
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins";
+    padding-left: 15px;
+}
+.text3{
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins";
+    padding-left: 35px;
+}
+.text4{
+    margin-top: 12px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins";
+    padding-left: 15px;
+}
+.check-button{
+    background: brown;
+    color: white;
+
+    padding: 0 0;
+    align-content: center;
+
+    text-decoration: none;
+    text-align: center;
+
+    width: auto;
+    height: 42px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 40px;
+    
+    border-radius: 999px;
+}
+.check-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: red;
+}
+.image0{
+    width: 35%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+
+    margin: 20px auto;
+
+    align-content: center;
+}
