@@ -78,6 +78,14 @@ h1{
     font-family: "Poppins";
     padding-left: 10px;
 }
+.text8{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: "Poppins";
+    padding-left: 10px;
+    position: absolute;
+    bottom: 140;
+}
 .check-button{
     background: rgb(35, 31, 255);
     color: white;
@@ -139,7 +147,7 @@ h1{
     transition: 0.25s;
 
     position: absolute;
-    bottom: 80px;
+    bottom: 140px;
     left: 10px;
     right: 25px;
     
@@ -175,7 +183,7 @@ h1{
     transition: 0.25s;
 
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     left: 10px;
     right: 25px;
     
@@ -211,7 +219,7 @@ h1{
     transition: 0.25s;
 
     position: absolute;
-    bottom: 20px;
+    bottom: 80px;
     left: 10px;
     right: 25px;
     
@@ -299,4 +307,40 @@ h1{
     width: 350px;
     position: flex;
     margin-top: 20;
+}
+.back-button{
+    background: rgb(35, 31, 255);
+    color: white;
+
+    padding: 0 0;
+    align-content: center;
+
+    text-decoration: none;
+    text-align: center;
+
+    width: auto;
+    height: 42px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 25px;
+    
+    border-radius: 999px;
+}
+.back-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: rgb(121, 118, 255);
 }

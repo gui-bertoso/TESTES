@@ -26,4 +26,4 @@ button.addEventListener("click", function(e){
     data_inputs.forEach(data =>  data.value = "");
     checkDataInputs();
 }
-);
+);2
