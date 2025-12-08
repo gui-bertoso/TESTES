@@ -58,8 +58,20 @@ h1{
     font-family: "Poppins";
     padding-left: 15px;
 }
+.text5{
+    color: white;
+    font-size: 16px;
+    font-family: "Poppins";
+    padding-left: 35px;
+}
+.text6{
+    color: black;
+    font-size: 16px;
+    font-family: "Poppins";
+    padding-left: 10px;
+}
 .check-button{
-    background: brown;
+    background: rgb(35, 31, 255);
     color: white;
 
     padding: 0 0;
@@ -92,7 +104,43 @@ h1{
 .check-button:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    background: red;
+    background: rgb(121, 118, 255);
+}
+.suggestion-button{
+    background: rgb(35, 31, 255);
+    color: white;
+
+    padding: 0 0;
+    align-content: center;
+
+    text-decoration: none;
+    text-align: center;
+
+    width: auto;
+    height: 42px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    position: absolute;
+    bottom: 140px;
+    left: 10px;
+    right: 25px;
+    
+    border-radius: 999px;
+}
+.suggestion-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: rgb(121, 118, 255);
 }
 .image0{
     width: 35%;
@@ -103,4 +151,40 @@ h1{
     margin: 20px auto;
 
     align-content: center;
+}
+.instagram-icon{
+    width: 60;
+    height: 60;
+
+    position: absolute;
+    bottom: 20;
+    left: 20;
+}
+.map-icon{
+    width: 60;
+    height: 60;
+
+    position: absolute;
+    bottom: 20;
+    left: 100;
+}
+.suggestion-icon{
+    width: 60;
+    height: 60;
+
+    position: absolute;
+    bottom: 27;
+    left: 180;
+}
+.scroll-container{
+    max-height: 200px;
+    max-width: 400px;
+    width: 400px;
+    position: absolute;
+    left: 30;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
 }
