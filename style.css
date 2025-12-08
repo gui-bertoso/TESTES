@@ -114,7 +114,7 @@ h1{
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     background: rgb(121, 118, 255);
 }
-.suggestion-button{
+.new-suggestion-button{
     background: rgb(35, 31, 255);
     color: white;
 
@@ -139,16 +139,93 @@ h1{
     transition: 0.25s;
 
     position: absolute;
-    bottom: 140px;
+    bottom: 80px;
     left: 10px;
     right: 25px;
     
     border-radius: 999px;
 }
-.suggestion-button:hover{
+.new-suggestion-button:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     background: rgb(121, 118, 255);
+}
+.look-suggestions-button{
+    background: rgb(35, 31, 255);
+    color: white;
+
+    padding: 0 0;
+    align-content: center;
+
+    text-decoration: none;
+    text-align: center;
+
+    width: auto;
+    height: 42px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 25px;
+    
+    border-radius: 999px;
+}
+.look-suggestions-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: rgb(121, 118, 255);
+}
+.send-suggestion-button{
+    background: rgb(35, 31, 255);
+    color: white;
+
+    padding: 0 0;
+    align-content: center;
+
+    text-decoration: none;
+    text-align: center;
+
+    width: auto;
+    height: 42px;
+
+    margin-top: 20px;
+    margin-left: 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: "Poppins";
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    right: 25px;
+    
+    border-radius: 999px;
+}
+.send-suggestion-button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background: rgb(121, 118, 255);
+}
+.send-suggestion-button:disabled{
+    background: grey;
+    color: darkslategrey;
+    cursor: not-allowed;
 }
 .image0{
     width: 35%;
@@ -196,4 +273,30 @@ h1{
     padding: 10px;
     border-radius: 12px;
     background-color: #f0f0f0;
+}
+.bairro-selector{
+    color: white;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+.type-selector{
+    color: white;
+    font-family: "Poppins";
+    font-size: 14px;
+}
+.suggestion-text{
+    color: white;
+    font-family: "Poppins";
+    font-size: 14px;
+    position: relative;
+    top: 15;
+}
+.suggestion-input{
+    color: black;
+    font-family: Poppins;
+    font-size: 14px;
+    height: 200px;
+    width: 350px;
+    position: flex;
+    margin-top: 20;
 }

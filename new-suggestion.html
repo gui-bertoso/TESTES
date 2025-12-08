@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Gabinete 4.0</title>
+</head>
+<body>
+    <div class="rect">
+        <div>
+            <div class="text1">Nova sugestão</div>
+            <div class="text3">Para enviar sua sugestão preencha os campos abaixo</div>
+            <br>
+            <label class="bairro-selector" for="bairro">Escolha seu bairro:</label>
+            <select id="bairro" id="new-suggestion-bairro" name="bairro">
+                <option value="">Selecione o seu bairro</option>
+                <option value="bairro-almeisa-costa-souza">Bairro Almeisa Costa Souza</option>
+                <option value="bairro-celina-gonçalves">Bairro Celina Gonçalves</option>
+                <option value="bairro-portal-do-parque">Bairro Portal do Parque</option>
+                <option value="royal-park-residencial">Royal Park Residencial</option>
+                <option value="cohab">Cohab</option>
+                <option value="bairro-campo-verde">Bairro Campo Verde</option>
+                <option value="vila-beatriz">Vila Beatriz</option>
+                <option value="bairro-guiomar-soares">Bairro Guiomar Soares</option>
+                <option value="bairro-horto-florestal">Bairro Horto Florestal</option>
+                <option value="bairro-capile">Bairro Capile</option>
+                <option value="bairro-irman-ribeiro">Bairro Irman Ribeiro</option>
+                <option value="bairro-claudia-turra">Bairro Claudia Turra</option>
+                <option value="bairro-antônio-rosário-migliorini">Bairro Antônio Rosário Migliorini</option>
+                <option value="bairro-asserna">Bairro Asserna</option>
+                <option value="bairro-centro-educacional">Bairro Centro Educacional</option>
+                <option value="bairro-cristo-rei">Bairro Cristo Rei</option>
+                <option value="bairro-argemiro-ortega">Bairro Argemiro Ortega</option>
+                <option value="bairro-durval-andrade-filho">Bairro Durval Andrade Filho</option>
+                <option value="bairro-vila-operária">Bairro Vila Operária</option>
+                <option value="bairro-são-vicente-de-paula">Bairro São Vicente de Paula</option>
+                <option value="bairro-monte-carlo">Bairro Monte Carlo</option>
+                <option value="bairro-jardim-ipanema">Bairro Jardim Ipanema</option>
+                <option value="distrito-de-nova-casa-verde">Distrito de nova Casa Verde</option>
+                <option value="centro">Centro</option>
+                <option value="assentamento-teijim">Assentamento Teijim</option>
+                <option value="assentamento-santa-olga">Assentamento Santa Olga</option>
+            </select>
+            <label class="type-selector" id="new-suggestion-type" for="type">Escolha o tipo de sugestão:</label>
+            <select id="type" name="type">
+                <option value="">Selecione o tipo</option>
+                <option value="bairro-almeisa-costa-souza">Natureza</option>
+                <option value="bairro-celina-gonçalves">Mobilidade</option>
+                <option value="bairro-portal-do-parque">Segurança</option>
+                <option value="royal-park-residencial">Agua</option>
+                <option value="royal-park-residencial">Energia</option>
+            </select>
+            <br>
+            <label class="suggestion-text">Sua sugestão</label>
+            <textarea class="suggestion-input" id="new-suggestion-text" placeholder="Digite nesta area"></textarea>
+            <a class="send-suggestion-button" id="send-new-suggestion" disabled>Enviar Sugestão</a>
+            <script src="send-suggestion.js"></script>
+        </div>
+    </div>
+</body>
