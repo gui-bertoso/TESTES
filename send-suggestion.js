@@ -1,6 +1,8 @@
 const button = document.getElementById("send-suggestion");
 const data_inputs = [document.getElementById("new-suggestion-bairro"), document.getElementById("new-suggestion-type"), document.getElementById("new-suggestion-text")];
 
+console.log("Initializing")
+
 function checkDataInputs(){
     const allFilled = data_inputs.every(data >= data.value.trim() !== "");
     button.disabled = !allFilled;

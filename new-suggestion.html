@@ -9,9 +9,8 @@
 <body>
     <div class="rect">
         <div>
-            <div class="text1">Nova sugestão</div>
-            <div class="text3">Para enviar sua sugestão preencha os campos abaixo</div>
-            <br>
+            <p class="font1">Nova sugestão</p>
+            <p class="font3">Para enviar sua sugestão preencha os campos abaixo</p>
             <label class="bairro-selector" for="bairro">Escolha seu bairro:</label>
             <select id="bairro" id="new-suggestion-bairro" name="bairro">
                 <option value="">Selecione o seu bairro</option>
@@ -42,6 +41,7 @@
                 <option value="assentamento-teijim">Assentamento Teijim</option>
                 <option value="assentamento-santa-olga">Assentamento Santa Olga</option>
             </select>
+            <p></p>
             <label class="type-selector" id="new-suggestion-type" for="type">Escolha o tipo de sugestão:</label>
             <select id="type" name="type">
                 <option value="">Selecione o tipo</option>
@@ -52,11 +52,12 @@
                 <option value="royal-park-residencial">Energia</option>
             </select>
             <br>
-            <label class="suggestion-text">Sua sugestão</label>
+            <label class="suggestion-text">Escreva abaixo a sua sugestão</label>
             <textarea class="suggestion-input" id="new-suggestion-text" placeholder="Digite nesta area"></textarea>
-            <a class="send-suggestion-button" id="send-new-suggestion" disabled>Enviar Sugestão</a>
+            <button class="send-suggestion-button" id="send-new-suggestion" disabled>Enviar Sugestão</button>
+
             <script src="send-suggestion.js"></script>
-            <a class="back-button" href="suggestions-panel.html">Voltar</a>
+            <button class="back-button"  onclick="window.location.href='suggestions-panel.html'">Voltar</button>
         </div>
     </div>
 </body>
