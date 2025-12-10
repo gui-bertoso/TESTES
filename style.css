@@ -5,8 +5,10 @@
     --font-title-color: rgba(255, 255, 255);
     --font-normal-color: rgba(255, 255, 255);
     --font-reversed-color: rgba(0, 0, 0);
+    --font-disabled-color: rgba(200, 200, 200);
     --button-base-color: rgba(100, 0, 0);
     --button-hover-color: rgba(150, 0, 0);
+    --button-disabled-color: rgba(100, 100, 100);
     --placeholder-color: rgba(0, 255, 0);
     --scroll-container-base-color: rgba(255, 255, 255);
     --scroll-container-border-color: rgba(255, 255, 255);
@@ -224,8 +226,8 @@ body{
     background: var(--button-hover-color);
 }
 .send-suggestion-button{
-    background: var(--button-base-color);
-    color: var(--font-normal-color);
+    background: var(--button-disabled-color);
+    color: var(--font-disabled-color);
 
     padding: 0 0;
     align-content: center;
