@@ -1,12 +1,19 @@
-.container{
-    background: black;
+:root{
+    --background-color: rgba(255, 0, 0);
+    --base-color: rgba(2250, 0, 0);
+    --shadow-color: rgba(0, 0, 0);
+    --font-title-color: rgba(255, 255, 255);
+    --font-normal-color: rgba(255, 255, 255);
+    --font-reversed-color: rgba(0, 0, 0);
+    --button-base-color: rgba(100, 0, 0);
+    --button-hover-color: rgba(150, 0, 0);
+    --placeholder-color: rgba(0, 255, 0);
+    --scroll-container-base-color: rgba(255, 255, 255);
+    --scroll-container-border-color: rgba(255, 255, 255);
 }
 body{
-    background: rgb(38, 80, 134);
+    background: var(--background-color);
     overflow: visible;
-}
-h1{
-    color: white;
 }
 .rect{
     position: relative;
@@ -17,8 +24,8 @@ h1{
     height: 88%;
     border-radius: 20px;
     padding: 3px;
-    background-color: rgb(84, 86, 148);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    background-color: var(--base-color);
+    box-shadow: 0 0 25px var(--shadow-color);
     max-width: 80%;
     margin: 20px auto;
     padding: 20px;
@@ -34,15 +41,15 @@ h1{
     height: 88%;
     border-radius: 20px;
     padding: 3px;
-    background-color: rgb(0, 255, 42);
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+    background-color: var(--placeholder-color);
+    box-shadow: 0 0 25px var(--shadow-color);
     max-width: 80%;
     margin: 20px auto;
     padding:56px;
     border-radius: 6px;
 }
 .map-text-placeholder{
-    color: black;
+    color: var(--font-reversed-color);
     font-family: "Poppins";
     font-size: 18px;
     font-weight: 600;
@@ -51,7 +58,7 @@ h1{
     left: 80px;
 }
 .font1{
-    color: white;
+    color: var(--font-title-color);
     font-size: 26px;
     font-style: bold;
     font-family: "Poppins";
@@ -60,51 +67,51 @@ h1{
     margin: 0px 0;
 }
 .font2{
-    color: white;
+    color: var(--font-normal-color);
     font-size: 14px;
     font-family: "Poppins";
     margin: 0px 0px;
 }
 .font3{
-    color: white;
+    color: var(--font-normal-color);
     font-size: 14px;
     font-family: "Poppins";
     margin: 20px 0;
 }
 .font4{
     margin-top: 12px;
-    color: white;
+    color: var(--font-normal-color);
     font-size: 14px;
     font-weight: bold;
     font-family: "Poppins";
     margin: 20px 0;
 }
 .font5{
-    color: white;
+    color: var(--font-normal-color);
     font-size: 16px;
     font-family: "Poppins";
     margin: 20px 0;
 }
 .font6{
-    color: black;
+    color: var(--font-reversed-color);
     font-size: 16px;
     font-family: "Poppins";
 }
 .font7{
-    color: rgb(255, 255, 255);
+    color: var(--font-normal-color);
     font-size: 16px;
     font-family: "Poppins";
 }
 .font8{
-    color: rgb(255, 255, 255);
+    color: var(--font-normal-color);
     font-size: 16px;
     font-family: "Poppins";
     position: relative;
     bottom: 0;
 }
 .check-button{
-    background: rgb(35, 31, 255);
-    color: white;
+    background: var(--button-base-color);
+    color: var(--font-normal-color);
 
     padding: 0 0;
     align-content: center;
@@ -138,11 +145,11 @@ h1{
 .check-button:hover{
     transform: translateY(-2px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    background: rgb(121, 118, 255);
+    background: var(--button-hover-color);
 }
 .new-suggestion-button{
-    background: rgb(35, 31, 255);
-    color: white;
+    background: var(--button-base-color);
+    color: var(--font-normal-color);
 
     padding: 0 0;
     align-content: center;
@@ -175,12 +182,12 @@ h1{
 }
 .new-suggestion-button:hover{
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    background: rgb(121, 118, 255);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    background: var(--button-hover-color);
 }
 .look-suggestions-button{
-    background: rgb(35, 31, 255);
-    color: white;
+    background: var(--button-base-color);
+    color: var(--font-normal-color);
 
     padding: 0 0;
     align-content: center;
@@ -213,12 +220,12 @@ h1{
 }
 .look-suggestions-button:hover{
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    background: rgb(121, 118, 255);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    background: var(--button-hover-color);
 }
 .send-suggestion-button{
-    background: rgb(35, 31, 255);
-    color: white;
+    background: var(--button-base-color);
+    color: var(--font-normal-color);
 
     padding: 0 0;
     align-content: center;
@@ -251,17 +258,13 @@ h1{
 }
 .send-suggestion-button:hover{
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    background: rgb(121, 118, 255);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    background: var(--button-hover-color);
 }
 .send-suggestion-button:disabled{
-    background: rgb(255, 0, 0);
-    color: rgb(80, 80, 80);
+    background: var(--button-disabled-color);
+    color: var(--disabled-font-color);
     cursor: not-allowed;
-}
-.send-suggestion-button:enabled{
-    background: rgb(0, 255, 170);
-    color: white;
 }
 .image0{
     width: 35%;
@@ -307,31 +310,31 @@ h1{
     right: 15px;
     margin-right: 10;
     overflow-y: auto;
-    border: 1px solid #ccc;
+    border: 1px solid var(--scroll-container-border-color);
     padding: 10px;
     border-radius: 12px;
-    background-color: #f0f0f0;
+    background-color: var(--scroll-container-base-color);
 }
 .bairro-selector{
-    color: white;
+    color: var(--font-normal-color);
     font-family: "Poppins";
     font-size: 14px;
 }
 .type-selector{
-    color: white;
+    color: var(--font-normal-color);
     font-family: "Poppins";
     font-size: 14px;
 }
 .suggestion-text{
-    color: white;
+    color: var(--font-normal-color);
     font-family: "Poppins";
     font-size: 14px;
     position: relative;
     top: 15;
 }
 .suggestion-input{
-    color: black;
-    font-family: Poppins;
+    color: var(--font-reversed-color);
+    font-family: "Poppins";
     font-size: 14px;
     height: 200px;
     width: 350px;
@@ -339,8 +342,8 @@ h1{
     margin-top: 20;
 }
 .back-button{
-    background: rgb(35, 31, 255);
-    color: white;
+    background: var(--button-base-color);
+    color: var(--font-normal-color);
 
     padding: 0 0;
     align-content: center;
@@ -373,6 +376,6 @@ h1{
 }
 .back-button:hover{
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    background: rgb(121, 118, 255);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    background: var(--button-hover-color);
 }
