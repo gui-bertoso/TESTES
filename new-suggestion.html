@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
 <html lang="pt-BR">
+
+<script src="send-suggestion.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -12,7 +14,7 @@
             <p class="font1">Nova sugestão</p>
             <p class="font3">Para enviar sua sugestão preencha os campos abaixo</p>
             <label class="bairro-selector" for="bairro">Escolha seu bairro:</label>
-            <select id="bairro" id="new-suggestion-bairro" name="bairro">
+            <select id="new-suggestion-bairro" name="bairro">
                 <option value="">Selecione o seu bairro</option>
                 <option value="bairro-almeisa-costa-souza">Bairro Almeisa Costa Souza</option>
                 <option value="bairro-celina-gonçalves">Bairro Celina Gonçalves</option>
@@ -56,7 +58,6 @@
             <textarea class="suggestion-input" id="new-suggestion-text" placeholder="Digite nesta area"></textarea>
             <button class="send-suggestion-button" id="send-new-suggestion" disabled>Enviar Sugestão</button>
 
-            <script src="send-suggestion.js"></script>
             <button class="back-button"  onclick="window.location.href='suggestions-panel.html'">Voltar</button>
         </div>
     </div>

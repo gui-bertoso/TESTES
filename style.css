@@ -1,16 +1,16 @@
 :root{
-    --background-color: rgba(255, 0, 0);
-    --base-color: rgba(2250, 0, 0);
+    --background-color: rgb(255, 255, 255);
+    --base-color: rgb(255, 255, 255);
     --shadow-color: rgba(0, 0, 0);
-    --font-title-color: rgba(255, 255, 255);
-    --font-normal-color: rgba(255, 255, 255);
+    --font-title-color: rgb(0, 0, 0);
+    --font-normal-color: rgb(0, 0, 0);
     --font-reversed-color: rgba(0, 0, 0);
-    --font-disabled-color: rgba(200, 200, 200);
-    --button-base-color: rgba(100, 0, 0);
-    --button-hover-color: rgba(150, 0, 0);
+    --font-disabled-color: rgb(172, 172, 172);
+    --button-base-color: rgb(214, 214, 214);
+    --button-hover-color: rgb(156, 156, 156);
     --button-disabled-color: rgba(100, 100, 100);
     --placeholder-color: rgba(0, 255, 0);
-    --scroll-container-base-color: rgba(255, 255, 255);
+    --scroll-container-base-color: rgb(211, 211, 211);
     --scroll-container-border-color: rgba(255, 255, 255);
 }
 body{
@@ -187,6 +187,11 @@ body{
     box-shadow: 0 10px 25px var(--shadow-color);
     background: var(--button-hover-color);
 }
+.new-suggestion-button:disabled{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px var(--shadow-color);
+    background: var(--button-hover-color);
+}
 .look-suggestions-button{
     background: var(--button-base-color);
     color: var(--font-normal-color);
@@ -279,29 +284,121 @@ body{
     align-content: center;
 }
 .instagram-icon{
-    width: 60;
-    height: 60;
+    width: 80px;
+    height: 80px;
 
     position: absolute;
-    bottom: 20;
-    left: 20;
+    top: 350px;
+    left: 35px;
+}
+.instagram-icon-text{
+    width: 190px;
+    height: 190px;
+
+    position: absolute;
+    bottom: -100px;
+    left: 40px;
+
+    margin-top: 12px;
+    color: var(--font-normal-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin: 20px 0;
 }
 .map-icon{
-    width: 60;
-    height: 60;
+    width: 150;
+    height: 150;
 
     position: absolute;
-    bottom: 20;
-    left: 100;
+    top: 160;
+    right: 20;
+}
+.map-icon-text{
+    width: 190px;
+    height: 190px;
+
+    position: absolute;
+    top: 260px;
+    right: -30px;
+
+    margin-top: 12px;
+    color: var(--font-normal-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin: 20px 0;
 }
 .suggestion-icon{
-    width: 60;
-    height: 60;
+    width: 100;
+    height: 100;
 
     position: absolute;
-    bottom: 27;
-    left: 180;
+    top: 190px;
+    left: 180px;
 }
+.suggestion-icon-text{
+    width: 190px;
+    height: 190px;
+
+    position: absolute;
+    top: 260px;
+    left: 190px;
+
+    margin-top: 12px;
+    color: var(--font-normal-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin: 20px 0;
+}
+.biography-icon{
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+    bottom: 120;
+    left: 190;
+}
+.biography-icon-text{
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+    bottom: 10px;
+    left: 190px;
+
+    margin-top: 12px;
+    color: var(--font-normal-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin: 20px 0;
+}
+.tasks-icon{
+    width: 100px;
+    height: 100px;
+
+    position: absolute;
+    bottom: 110;
+    right: 40;
+}
+.tasks-icon-text{
+    width: 80px;
+    height: 80px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+
+    margin-top: 12px;
+    color: var(--font-normal-color);
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Poppins";
+    margin: 20px 0;
+}
+
 .scroll-container{
     max-height: 200px;
     max-width: 400px;
@@ -380,4 +477,12 @@ body{
     transform: translateY(-2px);
     box-shadow: 0 10px 25px var(--shadow-color);
     background: var(--button-hover-color);
+}
+.placeholder-option-rect{
+    background-color: rgb(0, 255, 0);
+    width: 100;
+    height: 100;
+    position: relative;
+    left: 10;
+    top: 40;
 }
